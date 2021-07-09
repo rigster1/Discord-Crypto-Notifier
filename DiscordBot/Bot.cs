@@ -4,14 +4,14 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Discord_Bot.Commands;
+using Discord_Bot222.Commands;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.EventArgs;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Discord_Bot
+namespace Discord_Bot222
 {
     public class Bot
     {
