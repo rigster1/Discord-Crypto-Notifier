@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Discord_Bot.Commands;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.EventArgs;
@@ -48,9 +50,17 @@ namespace Discord_Bot
 
             Commands = Client.UseCommandsNext(commandsConfig);
 
+            GetType().Assembly
+                .GetTypes()
+                .Where(t => t.IsSubclassOf(typeof(BaseCommandModule)))
+                .ToList()
+                .ForEach(t => Commands.RegisterCommands(t));
+            
             await Client.ConnectAsync();
 
             await Task.Delay(-1);
+            
+            
         }
 
         private Task OnClientReady(object sender, ReadyEventArgs e)
