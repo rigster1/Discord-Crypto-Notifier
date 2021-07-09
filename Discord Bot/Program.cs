@@ -6,7 +6,7 @@ namespace Discord_Bot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var bot = new Bot();
         }
     }
 }
