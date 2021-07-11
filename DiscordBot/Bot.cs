@@ -1,17 +1,14 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Discord_Bot222.Commands;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.EventArgs;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Discord_Bot222
+namespace DiscordBot
 {
     public class Bot
     {
@@ -21,9 +18,8 @@ namespace Discord_Bot222
         public async Task RunAsync()
         {
             string json;
-
-            var configFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\config.json");
-            await using (var fs = File.OpenRead(configFilePath))
+            
+            await using (var fs = File.OpenRead(@"..\..\..\config.json"))
                 using (var sr = new StreamReader(fs, new UTF8Encoding(false)))
                      json = await sr.ReadToEndAsync().ConfigureAwait(false);
 

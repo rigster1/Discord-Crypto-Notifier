@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBot", "DiscordBot\Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinanceApi", "BinanceApi\BinanceApi.csproj", "{6411C993-DBEF-47CB-B0A0-DB7E7024A488}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{7AF4B45E-C564-4AB2-8769-EE04F6069C1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{3BDE5433-326B-480B-8CB1-F8164973CECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{6411C993-DBEF-47CB-B0A0-DB7E7024A488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6411C993-DBEF-47CB-B0A0-DB7E7024A488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6411C993-DBEF-47CB-B0A0-DB7E7024A488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF4B45E-C564-4AB2-8769-EE04F6069C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF4B45E-C564-4AB2-8769-EE04F6069C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF4B45E-C564-4AB2-8769-EE04F6069C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF4B45E-C564-4AB2-8769-EE04F6069C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDE5433-326B-480B-8CB1-F8164973CECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDE5433-326B-480B-8CB1-F8164973CECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDE5433-326B-480B-8CB1-F8164973CECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDE5433-326B-480B-8CB1-F8164973CECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

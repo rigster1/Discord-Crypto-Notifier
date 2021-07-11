@@ -14,10 +14,19 @@ namespace BinanceApi
         
         public static void Subscribe(string symbol)
         {
+            decimal lastPrice = -1;
+
             Client.FuturesUsdt.SubscribeToBookTickerUpdatesAsync(symbol, data =>
             {
                 var price = (data.Data.BestAskPrice + data.Data.BestBidPrice) / 2;
-                Console.WriteLine(price);
+
+                // for each item in db
+                // if above
+                // if price > signal: alert
+                // remove from db
+                
+                
+
             });
         }
     }
